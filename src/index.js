@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import Top from './components/header';
+import Body from './components/Main';
+import EventBtn from './components/Event';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -11,7 +13,20 @@ root.render(
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+export const foodMenu = ['김밥','오뎅','떡볶이'];
+export const userinfo = {
+  name: '진동현',
+  adress: '부천'
+}
+export const Event = () => {
+  alert('이벤트 발생');
+}
+function App() {
+  return(
+    <div>
+      <Top/>
+      <Body/>
+      <EventBtn/>
+    </div>
+  );
+}
