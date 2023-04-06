@@ -2,7 +2,7 @@ function Top(){
     return(
         <div>
             <h1>
-                Hello React
+                Hello React good
             </h1>
         </div>
     )
